@@ -1,75 +1,143 @@
-# React + TypeScript + Vite
+# 🛡️ ContractGuard AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Evidence-Backed Contract & Compliance Intelligence
 
-Currently, two official plugins are available:
+ContractGuard AI is an AI-powered contract compliance intelligence platform that helps organizations analyze contracts against their internal compliance policies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Instead of simply summarizing a contract, ContractGuard AI identifies important contractual obligations, compares them with predefined organizational policies, detects potential compliance risks, provides evidence for every finding, prioritizes issues, and recommends actions for human review.
 
-## React Compiler
+The core idea is:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> **Contract Evidence → Organizational Policy → Compliance Analysis → Risk → Action → Human Review**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🏆 Hackathon Project
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Project:** ContractGuard AI  
+**Domain:** AI & Agents  
+**Focus Area:** Autonomous Contract & Compliance Intelligence  
+**Application Type:** Web-based AI Compliance Platform
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# 📌 Problem Statement
 
-```
+Organizations operate with large numbers of contracts, agreements, internal policies, and compliance requirements.
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Important obligations are often distributed across different sections of a contract. Examples include:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Security deposit requirements
+- Payment conditions
+- Notice periods
+- Maintenance responsibilities
+- Termination conditions
+- Renewal conditions
+- Deposit return requirements
+- Data-sharing conditions
+- Contractual deadlines
+- Prohibited terms
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Manually reviewing every contract against organizational policies is time-consuming and makes it difficult to maintain consistent compliance checks.
 
-```
+A simple document summarizer can explain what a contract says, but organizations also need to know:
+
+1. What obligations exist?
+2. Which organizational policy applies?
+3. Does the contract satisfy that policy?
+4. What evidence supports the finding?
+5. What level of risk is involved?
+6. What action should be taken?
+7. Does the finding require human review?
+
+ContractGuard AI is designed to address this gap.
+
+---
+
+# 💡 Our Solution
+
+ContractGuard AI transforms a contract into an evidence-backed compliance investigation.
+
+The platform follows this workflow:
+
+```text
+                 CONTRACT
+                    │
+                    ▼
+          Document Extraction
+                    │
+                    ▼
+           Clause Identification
+                    │
+                    ▼
+        Organizational Policy Layer
+                    │
+                    ▼
+            Evidence Retrieval
+                    │
+                    ▼
+          Compliance Comparison
+                    │
+                    ▼
+            Risk Classification
+                    │
+                    ▼
+          Recommended Action
+                    │
+                    ▼
+             Human Review
+
+
+             ┌───────────────────────────────────────────────┐
+│              CONTRACTGUARD AI                  │
+├───────────────┬───────────────────────────────┤
+│               │                               │
+│  Overview     │       Dashboard               │
+│  Documents    │       Contract Upload         │
+│  Risk Intel.  │       Contract Analysis       │
+│  Deadlines    │       Risk Intelligence       │
+│  Evidence     │       Upcoming Obligations    │
+│  AI Invest.   │       Evidence                │
+│               │       AI Investigation Mode    │
+│               │                               │
+└───────────────┴───────────────────────────────┘
+
+
+End-to-End Workflow
+STEP 1
+User uploads PDF/DOCX
+        ↓
+STEP 2
+Backend receives the document
+        ↓
+STEP 3
+Document text is extracted
+        ↓
+STEP 4
+Relevant clauses are identified
+        ↓
+STEP 5
+Organizational policies are loaded
+        ↓
+STEP 6
+Relevant contract evidence is matched
+with applicable policies
+        ↓
+STEP 7
+Compliance status is determined
+        ↓
+STEP 8
+Risk is classified
+        ↓
+STEP 9
+Evidence and reasoning are displayed
+        ↓
+STEP 10
+Recommended action is generated
+        ↓
+STEP 11
+AI Investigation Mode performs
+deeper analysis when required
+        ↓
+STEP 12
+Human reviewer verifies important findings
