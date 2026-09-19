@@ -127,7 +127,7 @@ function App() {
       formData.append("file", file);
 
       const response = await fetch(
-        "http://127.0.0.1:8000/upload-contract",
+        "https://contractguard-ai-compliance-2026.onrender.com/upload-contract"s
         {
           method: "POST",
           body: formData,
@@ -163,7 +163,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "http://127.0.0.1:8000/extract-contract",
+        "https://contractguard-ai-compliance-2026.onrender.com/extract-contract"
         {
           method: "POST",
           body: formData,
@@ -201,7 +201,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "http://127.0.0.1:8000/analyze-contract",
+        "https://contractguard-ai-compliance-2026.onrender.com/analyze-contract"
         {
           method: "POST",
           body: formData,
@@ -250,7 +250,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "http://127.0.0.1:8000/investigate-contract",
+        "https://contractguard-ai-compliance-2026.onrender.com/investigate-contract",
         {
           method: "POST",
           body: formData,
