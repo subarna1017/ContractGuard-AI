@@ -127,8 +127,7 @@ function App() {
       formData.append("file", file);
 
       const response = await fetch(
-        "https://contractguard-ai-compliance-2026.onrender.com/upload-contract"s
-        {
+"https://contractguard-ai-compliance-2026.onrender.com/upload-contract",        {
           method: "POST",
           body: formData,
         }
@@ -163,7 +162,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "https://contractguard-ai-compliance-2026.onrender.com/extract-contract"
+        "https://contractguard-ai-compliance-2026.onrender.com/extract-contract",
         {
           method: "POST",
           body: formData,
@@ -201,7 +200,7 @@ function App() {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "https://contractguard-ai-compliance-2026.onrender.com/analyze-contract"
+        "https://contractguard-ai-compliance-2026.onrender.com/analyze-contract",
         {
           method: "POST",
           body: formData,
